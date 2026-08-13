@@ -1,7 +1,4 @@
 package problems;
-
-import java.util.Arrays;
-
 public class prob26 {
     public static void main(String[] args) {
         int[] nums = {1, 1, 2, 3, 4, 4, 5, 5, 5};

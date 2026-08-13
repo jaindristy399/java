@@ -89,17 +89,31 @@ public class L27Rec2 {
 
 
 
-public static void main(String[] args) {
-        int n=5;
-        System.out.println(fib(n));
-    }
-    public static int fib(int n) {
-        if(n==0 || n==1){
-            return n ;
-        }
-        int f1=fib(n-1);
-        int f2=fib(n-2);
-        return f1+f2;
-    }
+// public static void main(String[] args) {
+//         int n=5;
+//         System.out.println(fib(n));
+//     }
+//     public static int fib(int n) {
+//         if(n==0 || n==1){
+//             return n ;
+//         }
+//         int f1=fib(n-1);
+//         int f2=fib(n-2);
+//         return f1+f2;
+//     }
 
+
+public static void main(String[] args) {
+    String ques="abc";
+    PrintSubSeq(ques,"");
+}
+public static void PrintSubSeq(String ques,String ans) {
+    if(ques.length()==0){
+        System.out.println(ans +" ");
+        return;
+    }
+    char ch=ques.charAt(0);
+    PrintSubSeq(ques.substring(1), ans);
+    PrintSubSeq(ques.substring(1), ans+ch);
+}
 }
