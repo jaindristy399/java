@@ -14,18 +14,18 @@ public class L26Recursion {
 
 
 //32
-    // public static void main(String [] args){
-    //  int x=2;
-    //  int n=5;
-    //  System.out.println(pow(x,n));
-    // }
-    // public static int pow(int x,int n){
-    //     if(n==0){
-    //         return 1;
-    //     }
-    //  int ans=pow(x,n-1);
-    //  return ans*x;
-    // }
+    public static void main(String [] args){
+     int x=2;
+     int n=5;
+     System.out.println(pow(x,n));
+    }
+    public static int pow(int x,int n){
+        if(n==0){
+            return 1;
+        }
+     int ans=pow(x,n-1);
+     return ans*x;
+    }
 
 
 // 5
@@ -68,15 +68,15 @@ public class L26Recursion {
 
 
 
-    public static void main(String [] args){
-     int n=5;
-     PD(n);
-    }
-    public static void PD(int n){
-        if(n==0){
-            return;
-        }
-     System.out.println(n);
-       PD(n-1);
-    }
+    // public static void main(String [] args){
+    //  int n=5;
+    //  PD(n);
+    // }
+    // public static void PD(int n){
+    //     if(n==0){
+    //         return;
+    //     }
+    //  System.out.println(n);
+    //    PD(n-1);
+    // }
 }

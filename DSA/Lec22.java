@@ -42,15 +42,15 @@ public class Lec22 {
     //     return true;  
     // }
 
-    // public static void main(String[] args) {
+//     public static void main(String[] args) {
 
-    //     String s1="hyehellobye";
-    //    System.out.println(s1.substring(0,3));
-    //    System.out.println(s1.substring(2));
-    // String str="riya";
-    // System.out.println(pal(str));
+//         String s1="hyehellobye";
+//        System.out.println(s1.substring(0,3));
+//        System.out.println(s1.substring(2));
+//     String str="riya";
+//     System.out.println(pal(str));
 
-    //}
+//     }
 // public static boolean pal(String str){
 //     int i=0;
 // int j=str.length()-1;
@@ -76,21 +76,21 @@ public class Lec22 {
 // }
 // }
 
-public static void main(String[] args) {
-  String s1="kamal";
-  String s2="komal";
-  // System.out.println(10+30+s+20);
-    System.out.println(compareto(s1,s2));
+// public static void main(String[] args) {
+//   String s1="kamal";
+//   String s2="komal";
+//   // System.out.println(10+30+s+20);
+//     System.out.println(compareto(s1,s2));
 
-}
- public static int compareto (String s1,String s2){
-  if(s1==s2){
-    return 0;
-  }
-for(int i=0;i<Math.min(s1.length(),s2.length());i++){
-    if(s1.charAt(i)!=s2.charAt(i)){
-      return s1.charAt(i)-s2.charAt(i);
-    }
-}return s1.length()-s2.length();
-}
+// }
+//  public static int compareto (String s1,String s2){
+//   if(s1==s2){
+//     return 0;
+//   }
+// for(int i=0;i<Math.min(s1.length(),s2.length());i++){
+//     if(s1.charAt(i)!=s2.charAt(i)){
+//       return s1.charAt(i)-s2.charAt(i);
+//     }
+// }return s1.length()-s2.length();
+// }
 }
