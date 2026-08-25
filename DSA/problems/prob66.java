@@ -6,7 +6,7 @@ import java.util.Collections;
 public class prob66 {
     public static void main(String[] args) {
         int[] digits={9,9,9,9};
-        plusone(digits);
+        System.out.println(plusone(digits));
     }
     public static int[] plusone(int [] digits) {
         ArrayList<Integer>ll=new ArrayList<>();

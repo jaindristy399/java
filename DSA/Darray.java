@@ -64,22 +64,52 @@ public class Darray {
 //. TRANSPOSE
 // public static void main(String[] args){
     
-//     int[][] arr={{1,2,3,4},{5,6,7,8},{4,5,6,7},{8,9,10,11}};
+//     int[][] arr={{1,2,3},{4,5,6},{7,8,9}};
 //         Transpose(arr);
 // }
 // public static void Transpose(int[][] arr){
 // for (int i=0;i<arr.length;i++){
-//             for(int j=0;j<arr[i].length;j++){
+//             for(int j=i+1;j<arr[i].length;j++){
 //                 int temp=arr[i][j];
 //                 arr[i][j]=arr[j][i];
 //                 arr[j][i]=temp;
-//                 // System.out.print(arr[j][i]+ " ");
+//                  System.out.print(arr[j][i]+ " ");
 //             }
 //             System.out.println();
 //         }
 //     }
 
 
+
+
+
+    public static void main(String[] args) {
+       // int[][] arr = {{1, 2, 3},{4, 5, 6},{7, 8, 9}};
+        int[][] arr = {{5,1,9,11},{2,4,8,10},{13,3,6,7},{15,14,12,16}};
+        Transpose(arr);
+        // Print final matrix
+        for(int i = 0; i < arr.length; i++) {
+            for(int j = 0; j < arr[i].length; j++) {
+                System.out.print(arr[i][j] + " ");
+            }
+            System.out.println();
+        }
+    }
+    public static void Transpose(int[][] arr) {
+        for(int i = 0; i < arr.length; i++) {
+            for(int j = i + 1; j < arr[i].length; j++) {
+                int temp = arr[i][j];
+                arr[i][j] = arr[j][i];
+                arr[j][i] = temp;
+            }
+        }
+
+        for(int i=0;i<arr.length;i++){
+            int i=0;
+            int j=ar[r].length
+        }
+    }
+}
 
 
 
@@ -129,38 +159,38 @@ public class Darray {
 // }
 
 
-public static void main(String[] args){
+// public static void main(String[] args){
     
-    int[][] arr={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16},{17,18,19,20}};
-    spiral(arr);
-}
-public static void spiral(int[][] arr){
-    int minr=0;
-    int maxr=arr.length-1;
-    int minc=0;
-    int maxc=arr[0].length-1;
-    int totalel=arr.length*arr[0].length;
-    int count=0;
-    while(count<totalel){
-    for (int i=minc;i<=maxc && count<totalel;i++){
-        System.out.println(arr[minr][i]+" ");
-        count++;
-    }
-    minr++;
-    for(int i=minr;i<=maxr && count<totalel;i++){
-        System.out.println(arr[i][maxc]+" ");
-        count++;
-    }maxc--;
-    for(int i=maxc;i>=maxr && count<totalel;i--){
-        System.out.println(arr[maxr][i]+" ");
-        count++;
-    }maxr--;
-    for(int i=maxr;i>=minr && count<totalel;i--){
-        System.out.println(arr[i][minc]+" ");
-        count++;
-    }minc++;
-}}
-    }
+//     int[][] arr={{1,2,3,4},{5,6,7,8},{9,10,11,12},{13,14,15,16},{17,18,19,20}};
+//     spiral(arr);
+// }
+// public static void spiral(int[][] arr){
+//     int minr=0;
+//     int maxr=arr.length-1;
+//     int minc=0;
+//     int maxc=arr[0].length-1;
+//     int totalel=arr.length*arr[0].length;
+//     int count=0;
+//     while(count<totalel){
+//     for (int i=minc;i<=maxc && count<totalel;i++){
+//         System.out.println(arr[minr][i]+" ");
+//         count++;
+//     }
+//     minr++;
+//     for(int i=minr;i<=maxr && count<totalel;i++){
+//         System.out.println(arr[i][maxc]+" ");
+//         count++;
+//     }maxc--;
+//     for(int i=maxc;i>=maxr && count<totalel;i--){
+//         System.out.println(arr[maxr][i]+" ");
+//         count++;
+//     }maxr--;
+//     for(int i=maxr;i>=minr && count<totalel;i--){
+//         System.out.println(arr[i][minc]+" ");
+//         count++;
+//     }minc++;
+// }}
+//     }
     
 
 
