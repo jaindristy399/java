@@ -83,23 +83,50 @@
 //    }
 // }
 
+// public class recques {
+//     int prod=0;
+//     int next;
+//    void print(int n){
+  
+//      if(n==0){
+//         System.out.println(prod);
+//         if(prod==next){
+//         System.out.println("pal");
+//      }else{
+//         System.out.println("non pal");
+//      }
+//         return;
+//      }
+     
+//      int rem=n%10;
+//      prod=prod*10+rem;
+//      n=n/10;
+//      print(n);
+     
+//    }
+
+//    public static void main(String[] args) {
+//     recques a=new recques();
+//     a.next=121;
+//     a.print(121);
+    
+//    }
+// }
+
 public class recques {
     int prod=0;
-    int next;
+    int count;
    void print(int n){
   
      if(n==0){
-        System.out.println(prod);
-        if(prod==next){
-        System.out.println("pal");
-     }else{
-        System.out.println("non pal");
-     }
+        System.out.println(count);
         return;
      }
      
      int rem=n%10;
-     prod=prod*10+rem;
+     if(rem==0){
+        count++;
+     }
      n=n/10;
      print(n);
      
@@ -107,8 +134,7 @@ public class recques {
 
    public static void main(String[] args) {
     recques a=new recques();
-    a.next=121;
-    a.print(121);
+    a.print(100021);
     
    }
 }
