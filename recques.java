@@ -27,16 +27,17 @@
 
 
 public class recques {
-   static void print(int n){
     int sum=0;
+   static void print(int n){
+    recques a=new recques();
      if(n==0){
         return;
      }
-     sum=sum+n;
+     a.sum=a.sum+n;
      print(n-1);
-     System.out.println(sum);
+     System.out.println(a.sum);
    }
    public static void main(String[] args) {
-    print(5);
+    a.print(5);
    }
 }
