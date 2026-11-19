@@ -132,31 +132,31 @@
 
 
 //BINARY SEARCH USING RECURSION
-public class L27Rec2 {
-    public static void main(String[] args) {
-       int arr[] = {10, 20, 30, 40, 50, 60, 70};
-        int key = 50;
-        int start=0;
-        int end=arr.length;
-        int result=binary(arr, start, end, key);
-        if(result==-1){
-            System.out.println("not found");
-        }else{
-            System.out.println("found");
-        }
+// public class L27Rec2 {
+//     public static void main(String[] args) {
+//        int arr[] = {10, 20, 30, 40, 50, 60, 70};
+//         int key = 50;
+//         int start=0;
+//         int end=arr.length;
+//         int result=binary(arr, start, end, key);
+//         if(result==-1){
+//             System.out.println("not found");
+//         }else{
+//             System.out.println("found");
+//         }
 
-    }
-    static int binary(int arr[],int start,int end,int key){
-     if(start>end){
-        return -1;
-     }
-     int mid=(start+end)/2;
-     if(arr[mid]==key){
-        return mid;
-     }else if(arr[mid]<key){
-        return binary(arr, mid+1, end, key);
-     }else{
-        return binary(arr, start, mid-1, key);
-     }
-    }
-}
+//     }
+//     static int binary(int arr[],int start,int end,int key){
+//      if(start>end){
+//         return -1;
+//      }
+//      int mid=(start+end)/2;
+//      if(arr[mid]==key){
+//         return mid;
+//      }else if(arr[mid]<key){
+//         return binary(arr, mid+1, end, key);
+//      }else{
+//         return binary(arr, start, mid-1, key);
+//      }
+//     }
+// }
