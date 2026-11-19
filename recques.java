@@ -44,19 +44,58 @@
 //    }
 // }
 
+// public class recques {
+//     int sum=0;
+//    void print(int n){
+    
+    
+//      if(n==0){
+//         System.out.println(sum);
+//         return;
+//      }
+//      int rem=n%10;
+//      sum=sum+rem;
+//      n=n/10;
+//      print(n);
+//    }
+//    public static void main(String[] args) {
+//     recques a=new recques();
+//     a.print(1234);
+//    }
+// }
+// public class recques {
+//     int prod=1;
+//    void print(int n){
+    
+    
+//      if(n==0){
+//         System.out.println(prod);
+//         return;
+//      }
+//      int rem=n%10;
+//      prod=prod*rem;
+//      n=n/10;
+//      print(n);
+//    }
+//    public static void main(String[] args) {
+//     recques a=new recques();
+//     a.print(1234);
+//    }
+// }
+
 public class recques {
-    int sum=0;
+    int prod=1;
    void print(int n){
     
     
      if(n==0){
-        System.out.println(sum);
+        System.out.println(prod);
         return;
      }
      int rem=n%10;
-     sum=sum+rem;
+     prod=prod*rem;
      n=n/10;
-     print(n-1);
+     print(n);
    }
    public static void main(String[] args) {
     recques a=new recques();
