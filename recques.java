@@ -3,10 +3,11 @@ public class recques {
      if(n==0){
         return;
      }
-     print(n-1);
+     
      System.out.println(n);
+     printRev(n-1);
    }
    public static void main(String[] args) {
-    print(5);
+    print(1);
    }
 }
