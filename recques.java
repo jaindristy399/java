@@ -84,16 +84,14 @@
 // }
 
 public class recques {
-    int prod=1;
+    int prod=0;
    void print(int n){
-    
-    
      if(n==0){
         System.out.println(prod);
         return;
      }
      int rem=n%10;
-     prod=prod*rem;
+     prod=prod*10+rem;
      n=n/10;
      print(n);
    }
