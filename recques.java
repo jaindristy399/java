@@ -153,7 +153,9 @@ public class recques {
      if(n%2==0){
         n=n/2;
         count++;
-     }else if()
+     }else if(n%2!=0){
+        n=n-1;
+     }
      n=n/10;
      print(n);
      
