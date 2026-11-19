@@ -26,18 +26,40 @@
 // }
 
 
+// public class recques {
+//     int sum=0;
+//    void print(int n){
+    
+//      if(n==0){
+//         System.out.println(sum);
+//         return;
+//      }
+//      sum=sum+n;
+//      print(n-1);
+//      p
+//    }
+//    public static void main(String[] args) {
+//     recques a=new recques();
+//     a.print(5);
+//    }
+// }
+
 public class recques {
     int sum=0;
-   static void print(int n){
-    recques a=new recques();
+   void print(int n){
+    
+    
      if(n==0){
+        System.out.println(sum);
         return;
      }
-     a.sum=a.sum+n;
+     int rem=n%10;
+     sum=sum+rem;
+     n=n/10;
      print(n-1);
-     System.out.println(a.sum);
    }
    public static void main(String[] args) {
-    a.print(5);
+    recques a=new recques();
+    a.print(1234);
    }
 }
