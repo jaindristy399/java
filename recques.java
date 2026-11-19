@@ -95,6 +95,11 @@ public class recques {
      prod=prod*10+rem;
      n=n/10;
      print(n);
+     if(prod==n){
+        System.out.println("pal");
+     }else{
+        System.out.println("non pal");
+     }
    }
    public static void main(String[] args) {
     recques a=new recques();
