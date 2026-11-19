@@ -87,22 +87,27 @@ public class recques {
     int prod=0;
     
    void print(int n){
+    int next=n;
+    System.out.println(n);
      if(n==0){
         System.out.println(prod);
-        return;
-     }
-     int rem=n%10;
-     prod=prod*10+rem;
-     n=n/10;
-     print(n);
-     if(prod==n){
+        if(prod==next){
         System.out.println("pal");
      }else{
         System.out.println("non pal");
      }
+        return;
+     }
+     
+     int rem=n%10;
+     prod=prod*10+rem;
+     n=n/10;
+     print(n);
+     
    }
+
    public static void main(String[] args) {
     recques a=new recques();
-    a.print(1234);
+    a.print(121);
    }
 }
