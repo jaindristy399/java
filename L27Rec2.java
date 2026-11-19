@@ -1,4 +1,4 @@
-public class L27Rec2 {
+// public class L27Rec2 {
 
     // public static void main(String[] args) {
     //     System.out.println(fibo(6));
@@ -9,8 +9,8 @@ public class L27Rec2 {
     //  }
     //  return fibo(n-1)+fibo(n-2);
     // }
-    
-}
+
+//}
     // public static void main(String [] args){
     //  int n=5;
     //  System.out.println(fact(n));
@@ -129,3 +129,9 @@ public class L27Rec2 {
 //     PrintSubSeq(ques.substring(1), ans+ch);
 // }
 // }
+
+
+//BINARY SEARCH USING RECURSION
+public class L27Rec2 {
+    void binary(int arr[],)
+}
