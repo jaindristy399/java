@@ -138,7 +138,12 @@ public class L27Rec2 {
         int key = 50;
         int start=0;
         int end=arr.length;
-        binary(arr, start, end, key);
+        int result=binary(arr, start, end, key);
+        if(result==-1){
+            System.out.println("not found");
+        }else{
+            System.out.println("found");
+        }
 
     }
     static int binary(int arr[],int start,int end,int key){
@@ -146,6 +151,12 @@ public class L27Rec2 {
         return -1;
      }
      int mid=(start+end)/2;
-     
+     if(arr[mid]==key){
+        return mid;
+     }else if(arr[mid]<key){
+        return binary(arr, mid+1, end, key);
+     }else{
+        return binary(arr, start, mid-1, key);
+     }
     }
 }
