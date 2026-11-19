@@ -140,16 +140,15 @@
 
 //}
 
+
 public class recques {
     int prod=0;
     int count;
    void print(int n){
-  
      if(n==0){
         System.out.println(count);
         return;
      }
-     
      if(n%2==0){
         n=n/2;
         count++;
@@ -158,11 +157,9 @@ public class recques {
      }
      n=n/10;
      print(n);
-     
    }
-
    public static void main(String[] args) {
     recques a=new recques();
     a.print(100021);
-    
-   }}
+   }
+}
