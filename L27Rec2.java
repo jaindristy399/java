@@ -133,5 +133,19 @@
 
 //BINARY SEARCH USING RECURSION
 public class L27Rec2 {
-    void binary(int arr[],)
+    public static void main(String[] args) {
+       int arr[] = {10, 20, 30, 40, 50, 60, 70};
+        int key = 50;
+        int start=0;
+        int end=arr.length;
+        binary(arr, start, end, key);
+
+    }
+    static int binary(int arr[],int start,int end,int key){
+     if(start>end){
+        return -1;
+     }
+     int mid=(start+end)/2;
+     
+    }
 }
