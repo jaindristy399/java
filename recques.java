@@ -85,10 +85,9 @@
 
 public class recques {
     int prod=0;
-    
+    int next;
    void print(int n){
-    int next=n;
-    System.out.println(n);
+  
      if(n==0){
         System.out.println(prod);
         if(prod==next){
@@ -108,6 +107,8 @@ public class recques {
 
    public static void main(String[] args) {
     recques a=new recques();
+    a.next=121;
     a.print(121);
+    
    }
 }
