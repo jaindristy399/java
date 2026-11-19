@@ -85,6 +85,7 @@
 
 public class recques {
     int prod=0;
+    
    void print(int n){
      if(n==0){
         System.out.println(prod);
